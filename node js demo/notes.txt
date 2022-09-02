@@ -1,2 +1,52 @@
 npm install nodemon -> for automatic reload of the scripts
 npm install -g nodemon -> global installations
+
+
+how to write node pgrm and run it ?
+
+1. what is node js , express js
+2.simple node js 
+3. node program.js
+4.nodemon program.js
+
+
+what is a server?
+
+1. takes a req and gives back a res
+
+
+creating a server:
+
+1. import http module - require('http')
+2.http.createServer((req,res)=>{
+
+
+})
+3. url -  /home 
+req.url
+
+4. different types of responsed , string , html , json
+
+
+5. json response - JSON.stringify(data)
+
+6. res.writeHead(statusCode)
+res.end(data)
+
+
+parsed URL:
+
+1. require('url')
+
+
+2. url.parse(req.url,true)
+
+3. pathname , query
+
+
+
+
+
+
+
+
