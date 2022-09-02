@@ -1,8 +1,5 @@
 const http=require('http')
-const data={
-    username:'carry',
-    role:'admin'
-}
+const userDetails=require('./data/userDetails')
 const server=http.createServer((req,res)=>{
     console.log(req)
 if(req.url==='/home'&&req.method==='GET'){
@@ -15,7 +12,7 @@ if(req.url==='/index'&&req.method==='GET'){
 }
 if(req.url==='/users'&&req.method==='GET'){
     res.writeHead(200)
-    res.end(JSON.stringify(data))
+    res.end(JSON.stringify(userDetails))
 }
 else{
     res.writeHead(404)
