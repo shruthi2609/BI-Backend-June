@@ -1,0 +1,2 @@
+npm install nodemon -> for automatic reload of the scripts
+npm install -g nodemon -> global installations
