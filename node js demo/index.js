@@ -27,8 +27,7 @@ if(parsedURL.pathname==='/search'&&req.method==='GET'){
     else{
         res.writeHead(404)
         res.end(JSON.stringify({msg:'the user is not found'}))
-    }
-   
+    } 
 }
 else{
     res.writeHead(404)
