@@ -20,6 +20,10 @@ if(parsedURL.pathname='/signin'&&req.method==='POST'){
     res.end('you are not authenticated')
    }
    })
+
+   req.on('close',()=>{
+    console.log('req data is read ... done !')
+   })
    
 }
 })
