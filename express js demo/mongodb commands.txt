@@ -1,0 +1,17 @@
+show dbs
+
+use db_name
+
+show collections
+
+db.createCollection('contactmanager')
+
+db.contactmanager.insertOne({"fname":"peter","phone":283823832,"address":"IND"})
+
+db.contactmanager.insertMany([{"fname":"henry","phone":283823832,"address":"IND"},{"fname":"carry","phone":827392873}])
+
+db.contactmanager.find()
+
+db.contactmanager.find({"fname":"carry"})
+
+
